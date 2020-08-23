@@ -283,8 +283,8 @@ server_stop() {
 			game_command save-all
 			echo -en "Server going down in..."
 			for i in {1..10}; do
-								if [[ $i -lt ${COUNTDOWN} ]]; then
-				  game_command bc "&b$(( 10 - i ))"
+								if [[ $i -lt 3 ]]; then
+				  game_command say "$(( 10 - i ))"
 								fi
 				echo -n " $(( 10 - i ))"
 				sleep 1
