@@ -42,7 +42,7 @@ package() {
 	install -Dm644 ${_name}.conf            "${pkgdir}/etc/conf.d/${_name}"
 	install -Dm755 ${_name}.sh              "${pkgdir}/usr/bin/${_name}"
 	install -Dm644 ${_name}@.service        "${pkgdir}/usr/lib/systemd/system/${_name}@.service"
-	install -Dm644 ${_name}@-backup.service "${pkgdir}/usr/lib/systemd/system/${_name}@-backup.service"
+	install -Dm644 ${_name}-backup@.service "${pkgdir}/usr/lib/systemd/system/${_name}-backup@.service"
 	install -Dm644 ${_name}-backup.timer    "${pkgdir}/usr/lib/systemd/system/${_name}-backup.timer"
         install -Dm644 ${_subserver}.conf       "${pkgdir}${_server_root}/servers/${_subserver}.conf"
 	install -Dm644 ${_name}.${pkgver}.jar   "${pkgdir}${_server_root}/servers/${_subserver}/${_name}.${pkgver}.jar"
