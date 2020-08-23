@@ -1,9 +1,10 @@
-# Maintainer: Misterio <eu@misterio.me>
+# Maintainer: Johannes Joens <johannes@joens.email>
+# Contributer: Misterio <eu@misterio.me>
 # Contributer: Gordian Edenhofer <gordian.edenhofer@gmail.com>
 # Contributer: Philip Abernethy <chais.z3r0@gmail.com>
 # Contributer: sowieso <sowieso@dukun.de>
 
-pkgname=bungeecord-multi
+pkgname=bungeecord
 pkgver=1532
 pkgrel=1
 pkgdesc="BungeeCord is a sophisticated proxy and API designed mainly to teleport players between multiple Minecraft servers."
@@ -13,8 +14,6 @@ license=('custom')
 depends=('java-runtime-headless>=8' 'screen' 'sudo' 'bash' 'awk' 'sed')
 optdepends=("tar: needed in order to create world backups"
 	"nmap-netcat: required in order to suspend an idle server")
-conflicts=('bungeecord')
-provides=('bungeecord')
 backup=('etc/conf.d/bungeecord')
 install="${pkgname}.install"
 _name=bungeecord
